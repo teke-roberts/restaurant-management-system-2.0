@@ -15,6 +15,7 @@ namespace RMSDesktopUI
         public Bootstrapper()
         {
             Initialize();
+
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)
