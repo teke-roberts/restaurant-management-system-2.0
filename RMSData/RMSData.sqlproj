@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{6ee650e7-e1d0-4142-b7e2-0b7df7ac5893}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -63,6 +63,17 @@
     <Folder Include="PublishLocations" />
   </ItemGroup>
   <ItemGroup>
+    <Build Include="dbo\Tables\Account.sql" />
+    <Build Include="dbo\Tables\Item.sql" />
+    <Build Include="dbo\Tables\Order.sql" />
+    <Build Include="dbo\Tables\OrderItem.sql" />
+    <Build Include="dbo\Tables\ItemDetail.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="RMSData.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RMSData.publish.xml" />
     <None Include="PublishLocations\RMSData.publish.xml" />
   </ItemGroup>
 </Project>
